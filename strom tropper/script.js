@@ -13,8 +13,8 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
     const message = document.getElementById('message').value;
     
  
-    if(name===''||age===''||phone===''||street===''||city===''||state===''||zip===''||email===''){
-        alert('Please enter you name ')
+    if(name===''||age===''||phone===''||street===''||city===''||state===''||zip===''||!/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/.test(email)){
+        alert('Please fill out all required fields before submitting the form');    
     }else{
         alert("your form has been sumbitted")
     }
