@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Hogwarts Scopes</title>
+</head>
+<body>
+   <h1>Harry Potter's Scope Lab</h1>
+
+
+   <script>
+       var globalSpell = "Expecto Patronum!";
+
+
+       function castSpell() {
+           let localSpell = "Expelliarmus!";
+
+
+           if(true) {
+               let blockSpell = "Stupefy!";
+               console.log("Inside block: " + blockSpell); // visible here
+           }
+
+
+           // console.log(blockSpell); // uncomment to see error
+           console.log("Inside function: " + localSpell);
+       }
+
+
+       castSpell();
+       console.log("Global: " + globalSpell);
+       // console.log(localSpell); // uncomment to see error
+   </script>
+</body>
+</html>
+
+

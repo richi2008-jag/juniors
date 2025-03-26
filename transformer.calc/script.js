@@ -1,4 +1,7 @@
-
+document.getElementById('calculatorForm').addEventListener('submit', function(e) {
+    e.preventDefault();   calculate('add'); // you can adjust or add logic to choose operations dynamically
+}
+);
 function calculate(operation) {
    let num1 = parseFloat(document.getElementById('num1').value);
    let num2 = parseFloat(document.getElementById('num2').value);
