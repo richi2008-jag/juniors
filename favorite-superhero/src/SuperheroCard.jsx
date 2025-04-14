@@ -28,11 +28,10 @@ function SuperheroCard({ name, description, powers, quote }) {
     </div>
   );
 }  export default SuperheroCard;
-export default App;
 // src/App.jsx
 import React from 'react'; 
 import SuperheroCard from './SuperheroCard';
-import './App.css';
+import './app.css';
 
 
 function App() {
@@ -59,34 +58,3 @@ function App() {
 }
 export default App;
 // src/App.css
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 20px;
-} 
-.superhero-card {
-    border: 2px solid #444;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-  }
- 
-  .superhero-card header h2 {
-    margin: 0;
-    font-size: 2em;
-  }
- 
-  .superhero-card section {
-    margin-top: 15px;
-}
-
-.superhero-card ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.superhero-card footer blockquote {
-  font-style: italic;
-  margin-top: 20px;
-}
